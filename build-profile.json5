@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001B58F3AD48B3FC1CC574E6EA113CC43225DED8F52564846AACA4C5370341FB77A4888AC0633A5105",
+          "certpath": "E:/wsy/doc/key/testproject.cer",
+          "keyAlias": "testProject",
+          "keyPassword": "0000001BBDADA0E02A8134B468EA19F1041B47B8A47BD1CFCA23D0367D32B5FBC99E36A8964468D32BA9E3",
+          "profile": "E:/wsy/doc/key/testProjectRelease.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "E:/wsy/doc/key/TestProj.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
